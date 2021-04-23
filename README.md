@@ -16,7 +16,7 @@ Body:
 {
   "email": "test@mail.com" (required),
   "password": "hunter2" (required),
-  "role": "user" or "renter" (defaults to user)
+  "role": "user" or "renter" (defaults to "user")
   "firstName": "First",
   "lastName": "Lastington"
 }
