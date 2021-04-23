@@ -5,10 +5,12 @@
 ### Register
 
 POST /api/register
+
 Headers:
 ```
 Authorization: <auth token>
 ```
+
 Body:
 ```
 {
@@ -25,6 +27,7 @@ Body:
 ### Login
 
 POST /api/login
+
 Body:
 ```
 {
@@ -32,6 +35,7 @@ Body:
   "password": "hunter2" (required)
 }
 ```
+
 Response:
 ```
 {
