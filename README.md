@@ -1,6 +1,7 @@
 # Use My Tech Stuff API
 
 if a route has (auth), it requires the an auth token like so: 
+
 Headers:
 ```
 Authorization: <AUTH_TOKEN>
@@ -20,6 +21,13 @@ Body:
   "role": "user" or "renter" (defaults to "user")
   "firstName": "First",
   "lastName": "Lastington"
+}
+```
+
+Response:
+```
+{
+  "token": <AUTH_TOKEN>
 }
 ```
 
