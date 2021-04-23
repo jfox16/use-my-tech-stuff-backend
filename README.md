@@ -1,6 +1,6 @@
 # Use My Tech Stuff API
 
-if a route has (auth), it requires the an auth token like so: 
+(auth) routes require an auth token like so: 
 
 Headers:
 | Key | Value |
