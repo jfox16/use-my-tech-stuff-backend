@@ -1,15 +1,16 @@
 # Use My Tech Stuff API
 
+if a route has (auth), it requires the an auth token like so: 
+Headers:
+```
+Authorization: <AUTH_TOKEN>
+```
+
 ---
 
 ### Register
 
 POST /api/register
-
-Headers:
-```
-Authorization: <AUTH_TOKEN>
-```
 
 Body:
 ```
@@ -39,7 +40,7 @@ Body:
 Response:
 ```
 {
-  "token": ...
+  "token": <AUTH_TOKEN>
 }
 ```
 
@@ -47,7 +48,7 @@ Response:
 
 ### Get your own account info
 
-GET /api/account
+GET /api/account (auth)
 ```
 { user_id, email, role, first_name, last_name }
 ```
