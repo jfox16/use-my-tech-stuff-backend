@@ -8,7 +8,7 @@ POST /api/register
 
 Headers:
 ```
-Authorization: <AUTH TOKEN>
+Authorization: <AUTH_TOKEN>
 ```
 
 Body:
