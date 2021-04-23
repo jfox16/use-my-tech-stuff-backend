@@ -3,9 +3,9 @@
 if a route has (auth), it requires the an auth token like so: 
 
 Headers:
-```
-Authorization: <AUTH_TOKEN>
-```
+| Key | Value |
+| :-- | :-- |
+| Authorization | <AUTH_TOKEN> |
 
 ---
 
@@ -14,19 +14,18 @@ Authorization: <AUTH_TOKEN>
 POST /api/register
 
 Body:
-| Parameter | Type | Description |
-| --- | --- | --- |
+| Parameter | Type | Notes |
+| :-- | :-- | :-- |
 | email | string | (required) |
 | password | string | (required) |
+| role | string | "user" or "renter" (defaults to "user") |
 | first_name | string | |
 | last_name | string | | 
 
 Response:
-```
-{
-  "token": <AUTH_TOKEN>
-}
-```
+| Key | type |
+| :-- | :-- |
+| token | string |
 
 ---
 
@@ -35,27 +34,44 @@ Response:
 POST /api/login
 
 Body:
-```
-{
-  "email": "test@mail.com" (required),
-  "password": "hunter2" (required)
-}
-```
+| Parameter | Type | Notes |
+| :-- | :-- | :-- |
+| email | string | (required) |
+| password | string | (required) |
 
 Response:
-```
-{
-  "token": <AUTH_TOKEN>
-}
-```
+| Key | type |
+| :-- | :-- |
+| token | string |
 
 ---
 
 ### Get your own account info
 
 GET /api/account (auth)
-```
-{ user_id, email, role, first_name, last_name }
-```
+
+Response:
+| Key | Type |
+| :-- | :-- |
+| email | string |
+| password | string |
+| role | string |
+| first_name | string |
+| last_name | string |
+
+---
+
+### Update your own account info
+
+PUT /api/account (auth)
+
+Response:
+| Parameter | Type | Notes |
+| :-- | :-- | :-- |
+| email | string | |
+| password | string | |
+| role | string | "user" or "renter" (defaults to "user") |
+| first_name | string | |
+| last_name | string | | 
 
 
