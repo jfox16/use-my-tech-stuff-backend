@@ -14,15 +14,12 @@ Authorization: <AUTH_TOKEN>
 POST /api/register
 
 Body:
-```
-{
-  "email": "test@mail.com" (required),
-  "password": "hunter2" (required),
-  "role": "user" or "renter" (defaults to "user")
-  "firstName": "First",
-  "lastName": "Lastington"
-}
-```
+| Parameter | Type | Description |
+| --- | --- | --- |
+| email | string | (required) |
+| password | string | (required) |
+| first_name | string | |
+| last_name | string | | 
 
 Response:
 ```
