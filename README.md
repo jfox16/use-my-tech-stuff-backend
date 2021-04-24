@@ -16,36 +16,40 @@ Headers:
     POST /api/auth/register
   </summary>
 
-Body:
-| Parameter | Type | Notes |
-| :-- | :-- | :-- |
-| username | string | (required) |
-| password | string | (required) |
-| email | string | (required) |
-| role | string | "user" or "renter" (defaults to "user") |
+  Body:
+  | Parameter | Type | Notes |
+  | :-- | :-- | :-- |
+  | username | string | (required) |
+  | password | string | (required) |
+  | email | string | (required) |
+  | role | string | "user" or "renter" (defaults to "user") |
 
-Response:
-```
-{ token: <AUTH_TOKEN> }
-```
+  Response:
+  ```
+  { token: <AUTH_TOKEN> }
+  ```
 </details>
 
 ---
 
 ## Login
 
-POST /api/auth/login
+<details>
+  <summary>
+    POST /api/auth/login
+  </summary>
 
-Body:
-| Parameter | Type | Notes |
-| :-- | :-- | :-- |
-| username | string | (required) |
-| password | string | (required) |
+  Body:
+  | Parameter | Type | Notes |
+  | :-- | :-- | :-- |
+  | username | string | (required) |
+  | password | string | (required) |
 
-Response:
-```
-{ token: <AUTH_TOKEN> }
-```
+  Response:
+  ```
+  { token: <AUTH_TOKEN> }
+  ```
+</details>
 
 ---
 
