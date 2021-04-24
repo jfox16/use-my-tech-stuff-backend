@@ -76,7 +76,7 @@ Headers:
     ...
   ]
   ```
-<details>
+</details>
 
 ---
 
