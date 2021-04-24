@@ -9,7 +9,7 @@ Headers:
 
 ## Authorization
 
-### Register
+### Register an Account
 
 <details>
   <summary>
