@@ -7,8 +7,6 @@ Headers:
 | :-- | :-- |
 | Authorization | <AUTH_TOKEN> |
 
----
-
 ## Register
 
 <details>
