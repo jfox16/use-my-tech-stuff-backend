@@ -207,7 +207,7 @@ Headers:
   ```
 </details>
 
-### Get your own items
+### Get items you own
 
 <details>
   <summary>
