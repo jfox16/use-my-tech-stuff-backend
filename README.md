@@ -65,13 +65,13 @@ Headers:
       item_id: 1,
       name: "Television",
       owner: "Iron Man",
-      available: false
+      rented_by: "Thor",
     },
     {
       item_id: 2,
       name: "Camera",
       owner: "Spiderman",
-      available: true
+      rented_by: null
     },
     ...
   ]
@@ -91,7 +91,6 @@ Headers:
     item_id: 1,
     name: "Television",
     owner: { user_id: 1, username: "Iron Man" },
-    available: false,
     rented_by: { user_id: 2, username: "Captain America" }
   }
   ```
