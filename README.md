@@ -7,7 +7,9 @@ Headers:
 | :-- | :-- |
 | Authorization | <AUTH_TOKEN> |
 
-## Register
+## Users
+
+### Register
 
 <details>
   <summary>
@@ -30,7 +32,7 @@ Headers:
 
 ---
 
-## Login
+### Login
 
 <details>
   <summary>
@@ -51,7 +53,47 @@ Headers:
 
 ---
 
-## Get all items
+### Get your own account info
+
+<details>
+  <summary>
+    GET /api/account (auth)
+  </summary>
+
+  Response:
+  | Key | Type |
+  | :-- | :-- |
+  | email | string |
+  | password | string |
+  | role | string |
+  | first_name | string |
+  | last_name | string |
+</details>
+
+---
+
+### Update your own account info
+
+<details>
+  <summary>
+    PUT /api/account (auth)
+  </summary>
+
+  Response:
+  | Parameter | Type | Notes |
+  | :-- | :-- | :-- |
+  | email | string | |
+  | password | string | |
+  | role | string | "user" or "renter" |
+  | first_name | string | |
+  | last_name | string | |
+</details>
+
+## Items
+
+---
+
+### Get all items
 
 <details>
   <summary>
@@ -77,43 +119,4 @@ Headers:
   ]
   ```
 </details>
-
----
-
-## Get your own account info
-
-<details>
-  <summary>
-    GET /api/account (auth)
-  </summary>
-
-  Response:
-  | Key | Type |
-  | :-- | :-- |
-  | email | string |
-  | password | string |
-  | role | string |
-  | first_name | string |
-  | last_name | string |
-</details>
-
----
-
-## Update your own account info
-
-<details>
-  <summary>
-    PUT /api/account (auth)
-  </summary>
-
-  Response:
-  | Parameter | Type | Notes |
-  | :-- | :-- | :-- |
-  | email | string | |
-  | password | string | |
-  | role | string | "user" or "renter" |
-  | first_name | string | |
-  | last_name | string | |
-</details>
-
 
