@@ -175,6 +175,21 @@ Headers:
   ```
 </details>
 
+### Respond to a request
+
+<details>
+  <summary>
+    PUT /api/requests/:request_id (auth)
+  </summary>
+  
+  Can only be performed by the owner of the item.
+  
+  Body:
+  | Parameter | Type | Notes |
+  | :-- | :-- | :-- |
+  | status | string | "accept" or "decline" (required) |
+</details>
+
 ### Cancel a request
 
 <details>
@@ -182,27 +197,13 @@ Headers:
     DELETE /api/requests/:request_id (auth)
   </summary>
   
-  Response: deleted request
-  ```
-  {
-    id: 0,
-    item: { id: 1, name: "Toaster", owner: "Captain America" }
-  }
-  ```
-</details>
-
-### Accept a request
-
-<details>
-  <summary>
-    PUT /api/requests/:request_id (auth)
-  </summary>
+  Can only be performed by the one who made the request.
   
-  Response: deleted request
+  Response: The request that was deleted
   ```
   {
-    id: 0,
-    item: { id: 1, name: "Toaster", owner: "Captain America" }
+    request_id: 0,
+    item_id: 1
   }
   ```
 </details>
