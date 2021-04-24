@@ -85,12 +85,14 @@ Response:
   {
     item_id: 1,
     name: "Television",
-    owner: "Iron Man"
+    owner: "Iron Man",
+    available: false
   },
   {
     item_id: 2,
     name: "Camera",
-    owner: "Spiderman"
+    owner: "Spiderman",
+    available: true
   },
   ...
 ]
