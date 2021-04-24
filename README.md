@@ -112,3 +112,28 @@ Headers:
   ```
 </details>
 
+### Get your own items
+
+<details>
+  <summary>
+    GET /api/account/items (auth)
+  </summary>
+
+  Response:
+  ```
+  [
+    {
+      item_id: 1,
+      name: "Television",
+      available: false
+    },
+    {
+      item_id: 2,
+      name: "Camera",
+      available: true
+    },
+    ...
+  ]
+  ```
+</details>
+
