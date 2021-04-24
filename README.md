@@ -78,6 +78,25 @@ Headers:
   ```
 </details>
 
+### Get item details
+
+<details>
+  <summary>
+    GET /api/items/:item_id (auth)
+  </summary>
+
+  Response:
+  ```
+  {
+    item_id: 1,
+    name: "Television",
+    owner: { user_id: 1, username: "Iron Man" },
+    available: false,
+    rented_by: { user_id: 2, username: "Captain America" }
+  }
+  ```
+</details>
+
 ### Post an item
 
 <details>
@@ -133,10 +152,27 @@ Headers:
     POST /api/requests (auth)
   </summary>
   
-  Body
+  Body:
   | Parameter | Type | Notes |
   | :-- | :-- | :-- |
   | item_id | int | (required) |
+</details>
+
+### Get request details
+
+<details>
+  <summary>
+    GET /api/requests/:request_id (auth)
+  </summary>
+  
+  Response:
+  ```
+  {
+    request_id: 1,
+    item: { item_id: 1, name: "Television", "owner_id": 1 },
+    
+  }
+  ```
 </details>
 
 ### Cancel a request
@@ -190,7 +226,7 @@ Headers:
   ```
 </details>
 
-### Get your own requests
+### Get requests you made
 
 <details>
   <summary>
@@ -198,11 +234,28 @@ Headers:
   </summary>
 
   Response:
-  | Key | Type |
-  | :-- | :-- |
-  | email | string |
-  | password | string |
-  | role | string |
-  | first_name | string |
-  | last_name | string |
+  ```
+  [
+    { request_id: 1, item_id: 1, owner: "Superman" },
+    { request_id: 2, item_id: 3, owner: "Batman" },
+    ...
+  ]
+  ```
+</details>
+
+### Get requests for your items
+
+<details>
+  <summary>
+    GET /api/account/requests (auth)
+  </summary>
+
+  Response:
+  ```
+  [
+    { request_id: 1, item_id: 1, requester: "Iron Man" },
+    { request_id: 2, item_id: 3, requester: "Captain America" },
+    ...
+  ]
+  ```
 </details>
