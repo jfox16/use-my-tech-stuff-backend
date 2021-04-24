@@ -61,7 +61,7 @@ Response:
 
 ---
 
-### Get your own account info
+## Get your own account info
 
 GET /api/account (auth)
 
@@ -101,11 +101,15 @@ Response:
   {
     item_id: 1,
     name: "Television",
-    owner: "
-  }
+    owner: "Iron Man"
+  },
+  {
+    item_id: 2,
+    name: "Camera",
+    owner: "Spiderman"
+  },
+  ...
 ]
 ```
-
----
 
 
