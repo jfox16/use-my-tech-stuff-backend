@@ -9,7 +9,7 @@ Headers:
 
 ---
 
-### Register
+## Register
 
 POST /api/auth/register
 
@@ -36,7 +36,7 @@ Response:
 
 ---
 
-### Login
+## Login
 
 POST /api/auth/login
 
@@ -76,7 +76,7 @@ Response:
 
 ---
 
-### Update your own account info
+## Update your own account info
 
 PUT /api/account (auth)
 
@@ -91,7 +91,7 @@ Response:
 
 ---
 
-### Get all items
+## Get all items
 
 GET /api/items (auth)
 
