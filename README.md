@@ -123,26 +123,6 @@ Headers:
   | description | string | |
 </details>
 
-### Get your own items
-
-<details>
-  <summary>
-    GET /api/account/items (auth)
-  </summary>
-
-  Response:
-  ```
-  [
-    {
-      item_id: 1,
-      name: "Television",
-      available: false
-    }
-    ...
-  ]
-  ```
-</details>
-
 ## Requests
 
 ### Make a request
@@ -222,8 +202,28 @@ Headers:
   {
     user_id: 1,
     username: "Iron Man",
-    
+    role: "renter"
   }
+  ```
+</details>
+
+### Get your own items
+
+<details>
+  <summary>
+    GET /api/account/items (auth)
+  </summary>
+
+  Response:
+  ```
+  [
+    {
+      item_id: 1,
+      name: "Television",
+      available: false
+    }
+    ...
+  ]
   ```
 </details>
 
