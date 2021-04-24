@@ -45,6 +45,31 @@ Response:
 
 ---
 
+## Get all items
+
+GET /api/items (auth)
+
+Response:
+```
+[
+  {
+    item_id: 1,
+    name: "Television",
+    owner: "Iron Man",
+    available: false
+  },
+  {
+    item_id: 2,
+    name: "Camera",
+    owner: "Spiderman",
+    available: true
+  },
+  ...
+]
+```
+
+---
+
 ## Get your own account info
 
 GET /api/account (auth)
@@ -69,33 +94,8 @@ Response:
 | :-- | :-- | :-- |
 | email | string | |
 | password | string | |
-| role | string | "user" or "renter" (defaults to "user") |
+| role | string | "user" or "renter" |
 | first_name | string | |
 | last_name | string | |
-
----
-
-## Get all items
-
-GET /api/items (auth)
-
-Response:
-```
-[
-  {
-    item_id: 1,
-    name: "Television",
-    owner: "Iron Man",
-    available: false
-  },
-  {
-    item_id: 2,
-    name: "Camera",
-    owner: "Spiderman",
-    available: true
-  },
-  ...
-]
-```
 
 
