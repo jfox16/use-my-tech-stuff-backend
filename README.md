@@ -126,7 +126,7 @@ Headers:
 
 ## Requests
 
-### Request an item rental
+### Make a request
 
 <details>
   <summary>
@@ -139,16 +139,35 @@ Headers:
   | item_id | int | (required) |
 </details>
 
-### Cancel an item rental
+### Cancel a request
 
 <details>
   <summary>
     DELETE /api/requests/:request_id (auth)
   </summary>
   
-  Response:
+  Response: deleted request
   ```
-    <deleted_item>
+  {
+    id: 0,
+    item: { id: 1, name: "Toaster", owner: "Captain America" }
+  }
+  ```
+</details>
+
+### Accept a request
+
+<details>
+  <summary>
+    PUT /api/requests/:request_id (auth)
+  </summary>
+  
+  Response: deleted request
+  ```
+  {
+    id: 0,
+    item: { id: 1, name: "Toaster", owner: "Captain America" }
+  }
   ```
 </details>
 
@@ -162,6 +181,23 @@ Headers:
   </summary>
 
   Response:
+  ```
+  {
+    user_id: 1,
+    username: "Iron Man",
+    
+  }
+  ```
+</details>
+
+### Get your own requests
+
+<details>
+  <summary>
+    GET /api/account/requests (auth)
+  </summary>
+
+  Response:
   | Key | Type |
   | :-- | :-- |
   | email | string |
@@ -169,21 +205,4 @@ Headers:
   | role | string |
   | first_name | string |
   | last_name | string |
-</details>
-
-### Update your own account info
-
-<details>
-  <summary>
-    PUT /api/account (auth)
-  </summary>
-
-  Response:
-  | Parameter | Type | Notes |
-  | :-- | :-- | :-- |
-  | email | string | |
-  | password | string | |
-  | role | string | "user" or "renter" |
-  | first_name | string | |
-  | last_name | string | |
 </details>
