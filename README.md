@@ -112,6 +112,36 @@ Headers:
   ```
 </details>
 
+### Post an item
+
+<details>
+  <summary>
+    POST /api/items (auth)
+  </summary>
+  
+  | Parameter | Type | Notes |
+  | :-- | :-- | :-- |
+  | name | string | (required) |
+  | description | string | |
+  
+  
+</details>
+
+### Edit an item
+
+<details>
+  <summary>
+    POST /api/items (auth)
+  </summary>
+  
+  The item you're editing must belong to you.
+  
+  | Parameter | Type | Notes |
+  | :-- | :-- | :-- |
+  | name | string | |
+  | description | string | |
+</details>
+
 ### Get your own items
 
 <details>
@@ -126,12 +156,7 @@ Headers:
       item_id: 1,
       name: "Television",
       available: false
-    },
-    {
-      item_id: 2,
-      name: "Camera",
-      available: true
-    },
+    }
     ...
   ]
   ```
