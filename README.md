@@ -246,7 +246,7 @@ Headers:
 
 <details>
   <summary>
-    GET /api/account/requests (auth)
+    GET /api/account/requests/owned (auth)
   </summary>
 
   Response:
