@@ -78,7 +78,7 @@ Headers:
   ```
 </details>
 
-### Get item details
+### Get item by id
 
 <details>
   <summary>
@@ -137,7 +137,7 @@ Headers:
   | item_id | int | (required) |
 </details>
 
-### Get request details
+### Get request by id
 
 <details>
   <summary>
