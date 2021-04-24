@@ -11,7 +11,10 @@ Headers:
 
 ## Register
 
-POST /api/auth/register
+<details>
+  <summary>
+    POST /api/auth/register
+  </summary>
 
 Body:
 | Parameter | Type | Notes |
@@ -25,6 +28,7 @@ Response:
 ```
 { token: <AUTH_TOKEN> }
 ```
+</details>
 
 ---
 
