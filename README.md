@@ -7,7 +7,7 @@ Headers:
 | :-- | :-- |
 | Authorization | <AUTH_TOKEN> |
 
-## Users
+## Authorization
 
 ### Register
 
@@ -49,39 +49,7 @@ Headers:
   ```
 </details>
 
-### Get your own account info
-
-<details>
-  <summary>
-    GET /api/account (auth)
-  </summary>
-
-  Response:
-  | Key | Type |
-  | :-- | :-- |
-  | email | string |
-  | password | string |
-  | role | string |
-  | first_name | string |
-  | last_name | string |
-</details>
-
-### Update your own account info
-
-<details>
-  <summary>
-    PUT /api/account (auth)
-  </summary>
-
-  Response:
-  | Parameter | Type | Notes |
-  | :-- | :-- | :-- |
-  | email | string | |
-  | password | string | |
-  | role | string | "user" or "renter" |
-  | first_name | string | |
-  | last_name | string | |
-</details>
+## Users
 
 ## Items
 
@@ -123,18 +91,14 @@ Headers:
   | :-- | :-- | :-- |
   | name | string | (required) |
   | description | string | |
-  
-  
 </details>
 
-### Edit an item
+### Edit your own item
 
 <details>
   <summary>
-    POST /api/items (auth)
+    POST /api/items/:item_id (auth)
   </summary>
-  
-  The item you're editing must belong to you.
   
   | Parameter | Type | Notes |
   | :-- | :-- | :-- |
@@ -162,3 +126,53 @@ Headers:
   ```
 </details>
 
+## Item Rentals
+
+### Request an item rental
+
+<details>
+  <summary>
+    POST /api/items (auth)
+  </summary>
+  
+  | Parameter | Type | Notes |
+  | :-- | :-- | :-- |
+  | name | string | (required) |
+  | description | string | |
+</details>
+
+## Your Account
+
+### Get your own account info
+
+<details>
+  <summary>
+    GET /api/account (auth)
+  </summary>
+
+  Response:
+  | Key | Type |
+  | :-- | :-- |
+  | email | string |
+  | password | string |
+  | role | string |
+  | first_name | string |
+  | last_name | string |
+</details>
+
+### Update your own account info
+
+<details>
+  <summary>
+    PUT /api/account (auth)
+  </summary>
+
+  Response:
+  | Parameter | Type | Notes |
+  | :-- | :-- | :-- |
+  | email | string | |
+  | password | string | |
+  | role | string | "user" or "renter" |
+  | first_name | string | |
+  | last_name | string | |
+</details>
