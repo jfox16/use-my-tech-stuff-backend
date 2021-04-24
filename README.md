@@ -23,9 +23,7 @@ Body:
 
 Response:
 ```
-{
-  token: <AUTH_TOKEN>
-}
+{ token: <AUTH_TOKEN> }
 ```
 
 ---
@@ -42,9 +40,7 @@ Body:
 
 Response:
 ```
-{
-  token: <AUTH_TOKEN>
-}
+{ token: <AUTH_TOKEN> }
 ```
 
 ---
