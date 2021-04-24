@@ -49,8 +49,6 @@ Headers:
   ```
 </details>
 
----
-
 ### Get your own account info
 
 <details>
@@ -67,8 +65,6 @@ Headers:
   | first_name | string |
   | last_name | string |
 </details>
-
----
 
 ### Update your own account info
 
@@ -88,8 +84,6 @@ Headers:
 </details>
 
 ## Items
-
----
 
 ### Get all items
 
