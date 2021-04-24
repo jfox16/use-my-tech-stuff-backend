@@ -55,55 +55,67 @@ Headers:
 
 ## Get all items
 
-GET /api/items (auth)
+<details>
+  <summary>
+    GET /api/items (auth)
+  </summary>
 
-Response:
-```
-[
-  {
-    item_id: 1,
-    name: "Television",
-    owner: "Iron Man",
-    available: false
-  },
-  {
-    item_id: 2,
-    name: "Camera",
-    owner: "Spiderman",
-    available: true
-  },
-  ...
-]
-```
+  Response:
+  ```
+  [
+    {
+      item_id: 1,
+      name: "Television",
+      owner: "Iron Man",
+      available: false
+    },
+    {
+      item_id: 2,
+      name: "Camera",
+      owner: "Spiderman",
+      available: true
+    },
+    ...
+  ]
+  ```
+<details>
 
 ---
 
 ## Get your own account info
 
-GET /api/account (auth)
+<details>
+  <summary>
+    GET /api/account (auth)
+  </summary>
 
-Response:
-| Key | Type |
-| :-- | :-- |
-| email | string |
-| password | string |
-| role | string |
-| first_name | string |
-| last_name | string |
+  Response:
+  | Key | Type |
+  | :-- | :-- |
+  | email | string |
+  | password | string |
+  | role | string |
+  | first_name | string |
+  | last_name | string |
+</details>
 
 ---
 
 ## Update your own account info
 
-PUT /api/account (auth)
+<details>
+  <summary>
+    PUT /api/account (auth)
+  </summary>
 
-Response:
-| Parameter | Type | Notes |
-| :-- | :-- | :-- |
-| email | string | |
-| password | string | |
-| role | string | "user" or "renter" |
-| first_name | string | |
-| last_name | string | |
+  Response:
+  | Parameter | Type | Notes |
+  | :-- | :-- | :-- |
+  | email | string | |
+  | password | string | |
+  | role | string | "user" or "renter" |
+  | first_name | string | |
+  | last_name | string | |
+</details>
 
 
