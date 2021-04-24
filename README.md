@@ -35,7 +35,7 @@ Headers:
 <details>
   <summary>
     POST /api/auth/login
-  </summary>
+  </summary> 
 
   Body:
   | Parameter | Type | Notes |
@@ -48,8 +48,6 @@ Headers:
   { token: <AUTH_TOKEN> }
   ```
 </details>
-
-## Users
 
 ## Items
 
@@ -126,19 +124,32 @@ Headers:
   ```
 </details>
 
-## Item Rentals
+## Requests
 
 ### Request an item rental
 
 <details>
   <summary>
-    POST /api/items (auth)
+    POST /api/requests (auth)
   </summary>
   
+  Body
   | Parameter | Type | Notes |
   | :-- | :-- | :-- |
-  | name | string | (required) |
-  | description | string | |
+  | item_id | int | (required) |
+</details>
+
+### Cancel an item rental
+
+<details>
+  <summary>
+    DELETE /api/requests/:request_id (auth)
+  </summary>
+  
+  Response:
+  ```
+    <deleted_item>
+  ```
 </details>
 
 ## Your Account
