@@ -249,7 +249,7 @@ Headers:
     GET /api/account/requests/owned (auth)
   </summary>
   
-  Can only be performed by users with the role "renter"
+  Can only be performed by renters
 
   Response:
   ```
