@@ -148,8 +148,7 @@ Headers:
   ```
   {
     request_id: 1,
-    item: { item_id: 1, name: "Television", "owner_id": 1 },
-    
+    item: { item_id: 1, name: "Television", "owner_id": 1 }
   }
   ```
 </details>
