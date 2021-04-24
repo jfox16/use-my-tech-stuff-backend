@@ -24,12 +24,6 @@ Body:
 Response:
 ```
 {
-  user: {
-    id: 1,
-    username: "Iron Man",
-    email: "ironman@mail.com",
-    role: "renter"
-  },
   token: <AUTH_TOKEN>
 }
 ```
@@ -49,12 +43,6 @@ Body:
 Response:
 ```
 {
-  user: {
-    id: 1,
-    username: "Iron Man",
-    email: "ironman@mail.com",
-    role: "renter"
-  },
   token: <AUTH_TOKEN>
 }
 ```
