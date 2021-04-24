@@ -1,6 +1,6 @@
 # Use My Tech Stuff API
 
-(auth) routes require an auth token like so: 
+(auth) routes require an authentication token like so: 
 
 Headers:
 | Key | Value |
@@ -11,38 +11,53 @@ Headers:
 
 ### Register
 
-POST /api/register
+POST /api/auth/register
 
 Body:
 | Parameter | Type | Notes |
 | :-- | :-- | :-- |
-| email | string | (required) |
+| username | string | (required) |
 | password | string | (required) |
+| email | string | (required) |
 | role | string | "user" or "renter" (defaults to "user") |
-| first_name | string | |
-| last_name | string | | 
 
 Response:
-| Key | type |
-| :-- | :-- |
-| token | string |
+```
+{
+  user: {
+    id: 1,
+    username: "Iron Man",
+    email: "ironman@mail.com",
+    role: "renter"
+  },
+  token: <AUTH_TOKEN>
+}
+```
 
 ---
 
 ### Login
 
-POST /api/login
+POST /api/auth/login
 
 Body:
 | Parameter | Type | Notes |
 | :-- | :-- | :-- |
-| email | string | (required) |
+| username | string | (required) |
 | password | string | (required) |
 
 Response:
-| Key | type |
-| :-- | :-- |
-| token | string |
+```
+{
+  user: {
+    id: 1,
+    username: "Iron Man",
+    email: "ironman@mail.com",
+    role: "renter"
+  },
+  token: <AUTH_TOKEN>
+}
+```
 
 ---
 
@@ -72,6 +87,25 @@ Response:
 | password | string | |
 | role | string | "user" or "renter" (defaults to "user") |
 | first_name | string | |
-| last_name | string | | 
+| last_name | string | |
+
+---
+
+### Get all items
+
+GET /api/items (auth)
+
+Response:
+```
+[
+  {
+    item_id: 1,
+    name: "Television",
+    owner: "
+  }
+]
+```
+
+---
 
 
