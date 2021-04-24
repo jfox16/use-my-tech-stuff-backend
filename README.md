@@ -30,8 +30,6 @@ Headers:
   ```
 </details>
 
-=====
-
 ### Login
 
 <details>
