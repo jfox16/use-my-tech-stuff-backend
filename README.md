@@ -165,7 +165,7 @@ Headers:
   Body:
   | Parameter | Type | Notes |
   | :-- | :-- | :-- |
-  | accepted | boolean | Accept/decline (true/false) a request. (required) |
+  | accepted | boolean | Accept or decline a request. (required) |
 </details>
 
 ### Cancel a request
